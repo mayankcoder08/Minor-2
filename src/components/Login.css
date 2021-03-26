@@ -1,0 +1,20 @@
+
+.form-main{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    background-color: aqua;
+}
+.form-box{
+    width: 280px;
+    height: 380px;
+    position: relative;
+    margin: 6% auto;
+    background:rgb(255, 255, 255,1);
+    padding: 5%;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+
