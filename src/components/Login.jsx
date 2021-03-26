@@ -1,18 +1,43 @@
 import React from 'react'
 
+import "./Login.css"
 
 function Login(){
     return(
-        <div className='form-main'>
-            <button type="button" class="toggle-btn">Login</button>
-            <button type="button" class="toggle-btn">Register </button>
-            <form className='form-box'>
-                <input type='text' placeholder='enter text'/>
-                <input type='text' placeholder='enter password' />
-                {/* <input type="checkbox" class="check-box">Remember Me</input> */}
-                <button type="submit" class="submit-btn">Login</button>
-            </form>
+        <React.Fragment>
+        <div className='main-div' id='log-reg'>
+        <div className='login-box'>
+
+               <form>
+               <input type='text' placeholder='mail' className='input-group' required></input>
+               <input type='password' placeholder='password' className='input-group' required></input>
+               <br></br>
+               <input type='checkbox' className='checkbox-class'></input>
+               <label>Remember Me</label>
+               </form>
+               <div id='log-btn'>
+                <button type='button' className='btn-log'>LOGIN</button>
+                </div>
+                
+              
+           </div>
+           <div className='login-box'>
+              
+               <form>
+               <input type='text' placeholder='first name' className='input-group' required></input>
+               <input type='text' placeholder='second name' className='input-group' required></input>
+               <input type='text' placeholder='mail' className='input-group' required></input>
+               <input type='password' placeholder='password' className='input-group' required></input>
+               <input type='password' placeholder='confirm password' className='input-group' requied />
+               </form>
+               <div id='log-btn'>
+                <button type='button' className='btn-log'>REGISTER</button>
+                </div>
+              
+           </div>
         </div>
+          
+        </React.Fragment>
     )
 }
 
